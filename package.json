@@ -1,6 +1,6 @@
 {
   "name": "@nhz.io/gulp-stream-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Merge JSON/CSON files and resolve references",
   "main": "index.js",
   "scripts": {
