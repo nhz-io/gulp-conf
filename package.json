@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/nhz-io/gulp-stream-config",
   "dependencies": {
-    "@nhz.io/ref-resolve": "^1.0.0",
+    "@nhz.io/ref-resolve": "^1.0.1",
     "cson": "^3.0.2",
     "gulp-util": "^3.0.7",
     "lodash.defaultsdeep": "^4.6.0",
