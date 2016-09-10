@@ -1,5 +1,5 @@
 {
-  "name": "@nhz.io/gulp-conf",
+  "name": "@nhz.io/gulp-stream-config",
   "version": "1.0.0",
   "description": "Merge JSON/CSON files and resolve references",
   "main": "index.js",
@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nhz-io/gulp-conf.git"
+    "url": "git+https://github.com/nhz-io/gulp-stream-config.git"
   },
   "keywords": [
-    "gulp-conf",
+    "gulp-stream-config",
     "nhz.io"
   ],
   "author": "Ishi Ruy <dev@nhz.io>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nhz-io/gulp-conf/issues"
+    "url": "https://github.com/nhz-io/gulp-stream-config/issues"
   },
-  "homepage": "https://github.com/nhz-io/gulp-conf",
+  "homepage": "https://github.com/nhz-io/gulp-stream-config",
   "dependencies": {
     "@nhz.io/ref-resolve": "^1.0.0",
     "cson": "^3.0.2",
