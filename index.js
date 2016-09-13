@@ -10,7 +10,7 @@ const resolve = require('@nhz.io/ref-resolve')
 const NAME = 'gulp-conf'
 const NO_STREAMING = gutil.colors.red('Streaming is not supported!')
 
-module.exports = function gulpConf(conf = {}, unresolved = []) {
+module.exports = function gulpConf(conf = {}, override = {}, unresolved = []) {
 	let _conf = {}
 	return through2.obj(
 		function (file, enc, cb) {
@@ -40,7 +40,7 @@ module.exports = function gulpConf(conf = {}, unresolved = []) {
 
 		function (cb) {
 			unresolved.length = 0
-			Object.assign(conf, resolve(_conf, unresolved))
+			Object.assign(conf, defaultsDeep(override, resolve(_conf, unresolved)))
 			_conf = {}
 
 			unresolved.forEach(match => gutil.log(
